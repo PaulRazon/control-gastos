@@ -40,8 +40,7 @@ const ControlPresupuesto = ({presupuesto,gastos,setGastos,setPresupuesto,setIsVa
   
   return (
     <div className='contenedor-presupuesto contenedor sombra dos-columnas'>
-      <div>
-        <CircularProgressbar
+       <CircularProgressbar
           styles={buildStyles({
             pathColor:porcentaje>100?'#DC2626':'#3B82F6',
             trailColor:'#F5F5F5',
@@ -50,6 +49,8 @@ const ControlPresupuesto = ({presupuesto,gastos,setGastos,setPresupuesto,setIsVa
           value={porcentaje}
           text={`${porcentaje}% Gastado`}
         />
+      <div>
+       
         <div className='contenido-presupuesto'>
             <button
               className="reset-app"
